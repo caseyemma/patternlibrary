@@ -1,0 +1,288 @@
+:root {
+    --pink: #ebbab9;
+    --grey: #c9c5ba;
+    --green: #97b1a6;
+    --blue: #698996;
+    --teal: #79afb6;
+    border: none;
+    padding: none;
+    margin: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+hr {
+    border-top: .5px solid var(--pink);
+    margin: 40px 8rem; 
+}
+
+/* Nav Styles */
+
+#navbar {
+    position: fixed;
+}
+
+@media (min-width: 722px) {
+
+#navbar header {
+    flex-direction: column;
+    width: 175px;
+    height: 100vh;
+    background-color: var(--blue);
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+#header-img {
+    width: 150px;
+    object-fit: contain;
+    margin-left: 10px;
+    
+}
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+
+
+}
+#navbar ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+}
+    
+
+/* Mobile Nav Styles */
+@media (max-width: 721px) {
+    #navbar header {
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+    }
+    
+    #header-img {
+        width: 100px;
+        margin-left: 10px;
+        object-fit: contain;
+    }
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+    
+    }
+    #navbar ul li {
+        list-style: none;
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+    #navbar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #main-doc {
+        margin-left: none;
+        padding: 20px;
+    }
+}
+
+/* Main Content Mobile Styles */
+
+@media (min-width: 722px) {
+#main-doc {
+    margin-left: 200px;
+}
+}
+
+/* About Section Styles */
+#Style_Guide {
+    padding: 200px 0;
+    background-image: url(img/floralbkgd.png);
+    background-size: cover;
+}
+
+#Style_Guide h1 {
+    color: var(--pink);
+    text-align: center;
+    font-size: 4rem;
+}
+#Style_Guide p {
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+/* Typography Section */
+
+#Typography header {
+    color: var(--pink);
+    text-align: center;
+}
+#headings {
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#headingsdiv {
+    text-align: center;
+}
+
+#headings-with-text {
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#headings-with-text-div {
+    text-align: center;
+}
+
+/* Color Palette Section */
+#Color_Palette header {
+    color: var(--pink);
+    text-align: center;
+}
+
+#flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.pink {
+    background-color: var(--pink);
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    
+}
+
+.blue {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    
+}
+
+.teal {
+    background-color: var(--teal);
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    
+}
+
+.tan {
+    background-color: var(--grey);
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    
+}
+
+/* BASIC STYLES SECTION */
+#Basic_Styles header {
+    color: var(--pink);
+    text-align: center;
+}
+
+#list-style {
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#lists {
+    list-style: circle;
+    list-style-position:inside;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#text-block-div {
+    text-align: center;
+}
+
+#paragraph {
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#image {
+  width: 70%; 
+  object-fit: contain;
+}
+
+#text-elements {
+    color: var(--blue);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#link-style a {
+    text-decoration: none;
+    color: var(--pink);
+}
+
+/* FORM ELEMENTS SECTION */
+
+#form-elements {
+    color: var(--pink);
+    text-align: center;
+}
+#form {
+    text-align: center;
+}
+
+#form input {
+    border: none;
+    border-bottom: 1px solid #ebbab9;
+}
+
+#submit {
+    grid-area: submit;
+    background-color: #ebbab9;
+    border: none;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    cursor: pointer;
+  }
